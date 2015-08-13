@@ -14,9 +14,6 @@
 # All configuration values have a default; values that are commented out
 # serve to show the default.
 
-import sys, os
-import re
-
 from pywinauto import __version__ as version
 
 release = version
@@ -101,8 +98,8 @@ pygments_style = 'sphinx'
 # must exist either in Sphinx' static/ path, or in one of the custom paths
 # given in html_static_path.
 #html_style = 'default.css'
-html_style = 'classic.css'
-html_theme = "classic"
+#html_style = 'classic.css'
+#html_theme = "classic"
 
 # The name for this set of Sphinx documents.  If None, it defaults to
 # "<project> v<release> documentation".

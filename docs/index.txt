@@ -26,7 +26,7 @@ Installation
 
   - *Required* pyWin32                    http://sourceforge.net/projects/pywin32/files/pywin32/Build%20219/
 
-  - *Optional* Pillow (fork of PIL)          https://pypi.python.org/pypi/Pillow/2.7.0
+  - *Required* Pillow (fork of PIL)          https://pypi.python.org/pypi/Pillow/2.9.0
   
 - Download latest pywinauto from https://github.com/pywinauto/pywinauto/releases
 - Unzip the pywinauto zip file to a folder
@@ -37,7 +37,6 @@ Installation in silent mode
 (Python 2.7, 3.1, 3.2, 3.3, 3.4, 3.5)
 
 - Just run ``pip install pywinauto``
-
 
 To check you have it installed correctly
 Run Python ::
@@ -156,4 +155,3 @@ There are loads of reasons :-)
     though not yet implemented) is to allow scripts to run unchanged
     between original source language (often English) and the translated
     software (Japanese, German, etc).
-
