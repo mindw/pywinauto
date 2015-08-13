@@ -22,8 +22,6 @@
 
 "Tests for handleprops.py"
 
-__revision__ = "$Revision: 234 $"
-
 import unittest
 
 import os
@@ -34,7 +32,7 @@ from pywinauto.handleprops import children, classname, clientrect, contexthelpid
     is_toplevel_window, isenabled, isunicode, isvisible, iswindow, parent, processid, \
     rectangle, style, text, userdata
 from pywinauto.application import Application
-from pywinauto import six
+import six
 from pywinauto.sysinfo import is_x64_OS, is_x64_Python
 
 

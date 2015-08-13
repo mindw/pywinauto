@@ -47,12 +47,10 @@ from .. import win32functions
 from ..actionlogger import ActionLogger
 
 # I leave this optional because PIL is a large dependency
-try:
-    from PIL import ImageGrab
-except ImportError:
-    ImageGrab = None
+from PIL import ImageGrab
 
-from .. import six
+import six
+
 from .. import win32defines
 from .. import win32structures
 from ..timings import Timings
@@ -773,14 +771,6 @@ class HwndWrapper(object):
         
         rectangle = self.Rectangle()
         if not (rectangle.width() and rectangle.height()):
-            return None
-
-        # PIL is optional so check first
-        if not ImageGrab:
-            print("PIL does not seem to be installed. "
-                "PIL is required for CaptureAsImage")
-            self.actions.log("PIL does not seem to be installed. "
-                "PIL is required for CaptureAsImage")
             return None
 
         # get the control rectangle in a way that PIL likes it

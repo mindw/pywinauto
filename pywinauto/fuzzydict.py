@@ -56,8 +56,6 @@ KeyError: "'There'. closest match: 'hello' with ratio 0.400"
 """
 from __future__ import unicode_literals
 
-__revision__ = "$Rev$"
-
 import difflib
 
 class FuzzyDict(dict):

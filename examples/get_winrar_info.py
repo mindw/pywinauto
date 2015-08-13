@@ -12,8 +12,6 @@ More then likely you will need to modify the apppath
 entry in the 't' dictionary to where you have
 extracted the WinRAR executables.
 """
-__revision__ = "$Revision$"
-
 import sys
 
 from pywinauto.application import Application

@@ -10,5 +10,3 @@ ignore-paths:
     - sandbox
     - doc_src
     - pywinauto/unittests
-ignore-patterns:
-    - ^pywinauto/six.py$

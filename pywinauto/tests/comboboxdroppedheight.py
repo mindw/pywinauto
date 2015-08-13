@@ -46,8 +46,6 @@ rectangle could be of a different size.
 **Test Identifier**
 The identifier for this test/bug is "ComboBoxDroppedHeight"
 """
-__revision__ = "$Revision$"
-
 testname = "ComboBoxDroppedHeight"
 
 def ComboBoxDroppedHeightTest(windows):

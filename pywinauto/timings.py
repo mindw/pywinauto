@@ -100,7 +100,6 @@ import time
 import operator
 
 
-#=========================================================================
 class TimeConfig(object):
     "Central storage and manipulation of timing values"
     __default_timing = {

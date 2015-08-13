@@ -62,9 +62,6 @@ necessary at the moment.
 The identifier for this test/bug is "MissingExtraString"
 """
 
-__revision__ = "$Revision$"
-
-
 
 testname = "MissingExtraString"
 

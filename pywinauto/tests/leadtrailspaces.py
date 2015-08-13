@@ -63,8 +63,6 @@ positives then we should consider removing it.
 **Test Identifier**
 The identifier for this test/bug is "LeadTrailSpaces"
 """
-__revision__ = "$Revision$"
-
 
 testname = "LeadTrailSpaces"
 def LeadTrailSpacesTest(windows):

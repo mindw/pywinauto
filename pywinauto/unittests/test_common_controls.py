@@ -34,7 +34,7 @@ import os
 import win32api
 
 sys.path.append(".")
-from pywinauto import six
+import six
 from pywinauto.win32structures import RECT
 from pywinauto import win32defines
 from pywinauto import findbestmatch

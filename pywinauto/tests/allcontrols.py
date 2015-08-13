@@ -43,8 +43,6 @@ Not possible
 **Test Identifier**
 The identifier for this test/bug is "AllControls"
 """
-__revision__ = "$Revision$"
-
 
 testname = "AllControls"
 

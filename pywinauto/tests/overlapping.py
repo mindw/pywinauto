@@ -85,7 +85,6 @@ The identifier for this test is "Overlapping"
 """
 
 testname = "Overlapping"
-__revision__ = "$Revision$"
 
 #from pywinauto import win32structures
 

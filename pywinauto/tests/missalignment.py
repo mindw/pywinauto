@@ -59,8 +59,6 @@ they are not.
 **Test Identifier**
 The identifier for this test/bug is "Missalignment" """
 
-__revision__ = "$Revision$"
-
 testname = "Missalignment"
 
 from pywinauto.win32structures import RECT

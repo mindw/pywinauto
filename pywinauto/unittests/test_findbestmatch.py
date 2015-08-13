@@ -20,8 +20,6 @@
 
 "Tests for findbestmatch.py"
 
-__revision__ = "$Revision: 234 $"
-
 import unittest
 import os.path
 

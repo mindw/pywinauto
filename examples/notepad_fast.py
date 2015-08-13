@@ -23,8 +23,6 @@
 from __future__ import unicode_literals
 from __future__ import print_function
 
-__revision__ = "$Revision$"
-
 import sys
 import os.path
 import time

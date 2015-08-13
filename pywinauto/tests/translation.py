@@ -68,12 +68,10 @@ control after the dialog is created.
 **Test Identifier**
 The identifier for this test/bug is "Translation" """
 
-__revision__ = "$Revision$"
-
 testname = "Translation"
 
 import re
-from pywinauto import six
+import six
 
 #-----------------------------------------------------------------------------
 def TranslationTest(windows):

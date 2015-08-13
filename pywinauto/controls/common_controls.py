@@ -36,13 +36,13 @@ Classes that wrap the Windows Common controls
    :show-inheritance:
 """
 from __future__ import print_function
-
 import time
 import ctypes
 import warnings
 import locale
 
-from .. import six
+import six
+
 from .. import win32functions
 from .. import win32defines
 from .. import win32structures

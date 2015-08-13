@@ -17,24 +17,14 @@
 import sys, os
 import re
 
-sys.path.append("..")
-sys.path.append(".")
+from pywinauto import __version__ as version
 
-with open(os.path.join(os.path.dirname(__file__), '..', 'pywinauto', '__init__.py')) as f:
-    init_data = f.read()
-
-ver_re = re.compile(r'''__version__\s*\=\s*(['"])(.*)\1''')
-found = ver_re.search(init_data)
-if not found:
-    raise RuntimeError(
-    "Could not read version information from __init__.py")
-
-version = release = found.group(2)
+release = version
 
 # If your extensions are in another directory, add it here. If the directory
 # is relative to the documentation root, use os.path.abspath to make it
 # absolute, like shown here.
-sys.path.append(os.path.abspath('.'))
+#sys.path.append(os.path.abspath('.'))
 
 # General configuration
 # ---------------------
@@ -171,7 +161,7 @@ html_theme = "classic"
 #html_file_suffix = ''
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'pywinautodoc'
+#htmlhelp_basename = 'pywinautodoc'
 
 
 # Options for LaTeX output

@@ -35,13 +35,6 @@ Sendkeys
    
    pywinauto.SendKeysCtypes.txt
 
-Included 3rd party modules
-==============================
-.. toctree::
-   :maxdepth: 1
-   
-   pywinauto.six.txt
-
 Pre-supplied tests
 ==============================
 .. toctree::

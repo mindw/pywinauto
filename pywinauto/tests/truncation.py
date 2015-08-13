@@ -59,13 +59,11 @@ report that the string is truncated.
 The identifier for this test/bug is "Truncation"
 """
 
-__revision__ = "$Revision$"
-
 testname = "Truncation"
 
 import ctypes
 
-from pywinauto import six
+import six
 from pywinauto import win32defines
 from pywinauto import win32functions
 from pywinauto.win32structures import RECT

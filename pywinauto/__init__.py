@@ -25,7 +25,7 @@ Python package for automating GUI manipulation on Windows
 
 """
 
-__version__ = "0.5.4"
+from ._version import version as __version__
 
 from . import findwindows
 WindowAmbiguousError = findwindows.WindowAmbiguousError

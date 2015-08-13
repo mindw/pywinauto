@@ -21,53 +21,21 @@
 
 "Install and build pywinauto distributions"
 
+from setuptools import setup, find_packages
 
-# to build files:
-# setup.py py2exe
-from __future__ import print_function
-
-try:
-    try:
-        from ez_setup import use_setuptools
-        use_setuptools()
-    except ImportError:
-        print('No ez_setup.py. Using plain setuptools...')
-    from setuptools import setup
-except ImportError:
-    print('Using distutils.core for setup...')
-    from distutils.core import setup
-
-import os.path
-import sys
-
-# We need the path to setup.py to be able to run
-# the setup from a different folder
-def SetupPath(path = ""):
-    # get the path to the setup file
-    setup_path = os.path.abspath(os.path.split(__file__)[0])
-
-    return os.path.join(setup_path, path)
-
-
-# add it to the system path
-sys.path.append(SetupPath())
-
+requirements = ['six', 'Pillow']
 try:
     import win32api
-    requirements = []
 except ImportError:
-    requirements = ["pypiwin32"]
-
-# make sure the documentation is in the correct place for building
-# todo: see how to build the website
-#if "sdist" in sys.argv:
-#    import shutil
-#    if not os.path.exists(SetupPath("docs")):
-#        shutil.move(SetupPath("website"), SetupPath("docs"))
-
+    requirements.append('pypiwin32')
 
 setup(name='pywinauto',
-    version = '0.5.4',
+    use_scm_version={
+        'version_scheme': 'guess-next-dev',
+        'local_scheme': 'dirty-tag',
+        'write_to': 'pywinauto/_version.py'
+    },
+    setup_requires=['setuptools-scm>1.5.4'],
     description = 'pywinauto is a set of python '
         'modules to automate the Microsoft Windows GUI',
     keywords = "windows automation gui GuiAuto",
@@ -81,7 +49,7 @@ controls also.
 """,
     platforms=['win32'],
 
-    packages = ["pywinauto", "pywinauto.tests", "pywinauto.controls"],
+    packages = find_packages(),
 
     license = "LGPL",
     classifiers=[
@@ -92,7 +60,6 @@ controls also.
             'GNU Lesser General Public License v2 or later (LGPLv2+)',
         'Operating System :: Microsoft :: Windows',
         'Programming Language :: Python',
-        'Programming Language :: Python :: 2.6',
         'Programming Language :: Python :: 2.7',
         'Programming Language :: Python :: 3.3',
         'Programming Language :: Python :: 3.4',

@@ -20,8 +20,6 @@
 
 "Tests for actionlogger.py"
 
-__revision__ = "$Revision$"
-
 import unittest
 
 import os, sys, logging

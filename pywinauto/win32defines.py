@@ -25,8 +25,6 @@
 "Definition of Windows defines"
 from __future__ import unicode_literals
 
-__revision__ = "$Revision$"
-
 from ctypes import c_int
 
 

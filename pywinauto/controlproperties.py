@@ -22,8 +22,6 @@
 
 """Wrap"""
 
-__revision__ = "$Rev: 439 $"
-
 
 from .win32structures import RECT, LOGFONTW
 

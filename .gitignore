@@ -56,3 +56,5 @@ docs/_sources/
 # PyBuilder
 target/
 /.idea
+
+pywinauto/_version.py

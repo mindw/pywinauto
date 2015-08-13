@@ -22,8 +22,7 @@
 """Package of tests that can be run on controls or lists of controls
 """
 from __future__ import print_function
-
-from .. import six
+import six
 
 
 def run_tests(controls, tests_to_run = None, test_visible_only = True):

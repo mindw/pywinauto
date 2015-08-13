@@ -25,23 +25,19 @@
 from __future__ import print_function
 from __future__ import unicode_literals
 
-from xml.etree.cElementTree import Element
-from xml.etree.cElementTree import SubElement
-from xml.etree.cElementTree import ElementTree
+from xml.etree.cElementTree import Element, SubElement, ElementTree
 
 import ctypes
 import re
 import bz2, base64
-try:
-    import PIL.Image
-    PIL_imported = True
-except ImportError:
-    PIL_imported = False
+import six
+
+import PIL.Image
+
 from . import controls
 
 # reported that they are not used - but in fact they are
 # through a search of globals()
-from . import six
 from .win32structures import LOGFONTW, RECT
 
 class XMLParsingError(RuntimeError):
@@ -408,8 +404,6 @@ def _ReadXMLStructure(control_element):
             img = _GetAttributes(elem)
             data = bz2.decompress(base64.decodestring(img['data'].encode('utf-8')))
 
-            if PIL_imported is False:
-                raise RuntimeError('PIL is not installed!')
             propval = PIL.Image.frombytes(
                 img['mode'],
                 (img['size_x'], img['size_y']),

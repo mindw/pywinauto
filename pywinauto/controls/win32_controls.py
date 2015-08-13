@@ -28,9 +28,10 @@ import time
 import ctypes
 import win32gui
 import locale
+import six
 
 from . import HwndWrapper
-from .. import six
+
 from .. import win32functions
 from .. import win32defines
 from .. import win32structures

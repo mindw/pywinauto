@@ -20,8 +20,6 @@
 
 "tests a set of controls for repeated hotkey errors"
 
-__revision__ = "$Revision$"
-
 #
 #
 #from Test_AsianHotkey import AsianHotkeyFormatIncorrect

@@ -31,7 +31,7 @@ import sys
 sys.path.append(".")
 from pywinauto.SendKeysCtypes import SendKeys, DEBUG, KeySequenceError
 from pywinauto.SendKeysCtypes import KeyAction, VirtualKeyAction, PauseAction
-from pywinauto import six
+import six
 from pywinauto.sysinfo import is_x64_Python, is_x64_OS
 from pywinauto.application import Application
 from pywinauto.actionlogger import ActionLogger

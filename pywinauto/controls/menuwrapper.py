@@ -34,11 +34,12 @@ import win32gui
 import win32gui_struct
 import locale
 
+import six
+
 from .. import win32structures
 from .. import win32functions
 from .. import win32defines
 from .. import findbestmatch
-from .. import six
 from ..RemoteMemoryBlock import RemoteMemoryBlock
 from ..timings import Timings
 

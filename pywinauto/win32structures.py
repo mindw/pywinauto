@@ -22,9 +22,9 @@
 
 """Definition of Windows structures
 """
+import six
 
 from .win32defines import LF_FACESIZE
-from . import six
 from . import sysinfo
 
 import ctypes
