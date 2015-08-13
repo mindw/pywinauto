@@ -50,8 +50,8 @@ controls also.
     platforms=['win32'],
 
     packages = find_packages(),
-
-    license = "LGPL",
+    package_data = {'': ['*.ico',]},
+    license = 'LGPL',
     classifiers=[
         'Development Status :: 4 - Beta',
         'Environment :: Console',
@@ -69,4 +69,8 @@ controls also.
         'Topic :: Software Development :: User Interfaces',
         ],
     install_requires=requirements,
+    entry_points={
+        'gui_scripts': [
+            'swapy = pywinauto.swapy.__main__:main',
+        ]}
     )

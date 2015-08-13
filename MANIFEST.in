@@ -1,17 +1,11 @@
 include Readme.txt
-include doc_src\*.txt
+graft docs
 include LICENSE
-include setup.cfg
-include setup.py
-
-include pywinauto\controls\*.py
-include pywinauto\tests\*.py
-include pywinauto\unittests\*.py
-
+include setup.*
+recursive-include examples *.py
+include pywinauto/unittests/*.py
+include pywinauto/swapy/*.ico
 # include the examples - but not Watsup or .svn directories
-include examples\*.py
-exclude examples\examples_watsup\*.py
+include examples/*.py
+exclude examples/examples_watsup/*.py
 
-# include all the website folder and make sure that
-# the sub version files are not included
-exclude pywinauto\docs\.doctrees\*
