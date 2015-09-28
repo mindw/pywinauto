@@ -28,15 +28,16 @@ function run {
     Write-Host $env:APPVEYOR_BUILD_FOLDER
 
     cd $env:APPVEYOR_BUILD_FOLDER
-    $stylesheet =  "./ci/transform_xunit_to_appveyor.xsl"
-    $input = "nosetests.xml"
-    $output = "transformed.xml"
+    $stylesheet =  "$($env:APPVEYOR_BUILD_FOLDER)/ci/transform_xunit_to_appveyor.xsl"
+    $input = "$($env:APPVEYOR_BUILD_FOLDER)/nosetests.xml"
+    $output = "$($env:APPVEYOR_BUILD_FOLDER)/transformed.xml"
     
     #nosetests  --all-modules --with-xunit pywinauto/unittests
     nosetests --nologcapture --exclude=testall --with-xunit --with-coverage --cover-html --cover-html-dir=Coverage_report --cover-package=pywinauto --verbosity=3 pywinauto\unittests
     $success = $?
     Write-Host "result code of nosetests:" $success
 
+    cd $env:APPVEYOR_BUILD_FOLDER
     xslt_transform $input $stylesheet $output
 
     # upload all screen shots in JPEG format
