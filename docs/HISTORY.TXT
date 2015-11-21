@@ -41,7 +41,7 @@ Change Log
 
 
 0.5.2 Improve ListView, new methods for CPU usage, DPI awareness
-------------------------------------------------------------------
+----------------------------------------------------------------
 07-September-2015
 
  * New Application methods: ``CPUUsage`` returns CPU usage as a percent (float number),
@@ -71,7 +71,7 @@ Change Log
 
 
 0.5.1 Several fixes, more tests
-------------------------------------------------------------------
+-------------------------------
 13-July-2015
 
  * Resolve pip issues
@@ -90,7 +90,7 @@ Change Log
 
 
 0.5.0 64-bit Py2/Py3 compatibility
-------------------------------------------------------------------
+----------------------------------
 30-June-2015
 
  * 64-bit Python and 64-bit apps support (but 32-bit Python is recommended for 32-bit apps)
@@ -123,7 +123,7 @@ Change Log
 
 
 0.4.0 Various cleanup and bug fixes
-------------------------------------------------------------------
+-----------------------------------
 03-April-2010
 
  * Gracefully Handle dir() calls on Application or WindowSpecification objects
@@ -170,7 +170,7 @@ Change Log
 
 
 0.3.9 Experimental! New Sendkeys, and various fixes
-------------------------------------------------------------------
+---------------------------------------------------
 27-November-2009
 
  * Major change this release is that Sendkeys is no longer a requirement!
@@ -201,7 +201,7 @@ Change Log
 
 
 0.3.8 Collecting improvements from last 2 years
-------------------------------------------------------------------
+-----------------------------------------------
 10-March-2009
 
  * Fixed toolbar button pressing - This required for
@@ -281,7 +281,7 @@ Change Log
 
 
 0.3.7 Merge of Wait changes and various bug fixes/improvements
-------------------------------------------------------------------
+--------------------------------------------------------------
 10-April-2007
 
 * Added Timings.WaitUntil() and Timings.WaitUntilPasses() which
@@ -330,7 +330,7 @@ Change Log
 
 
 0.3.6b Changes not documented in 0.3.6 history
-------------------------------------------------------------------
+----------------------------------------------
 31-July-2006
 
 * Fixed a bug in how findbestmatch.FindBestMatches was working.
@@ -342,7 +342,7 @@ Change Log
 
 
 0.3.6 Scrolling and Treview Item Clicking added
-------------------------------------------------------------------
+-----------------------------------------------
 28-July-2006
 
 * Added parameter to ``_treeview_item.Rectangle()`` to have an option
@@ -367,7 +367,7 @@ Change Log
 
 
 0.3.5 Moved to Metaclass control wrapping
-------------------------------------------------------------------
+-----------------------------------------
 24-May-2006
 
 * Moved to a metaclass implementation of control finding. This
@@ -393,7 +393,7 @@ Change Log
 
 
 0.3.4 Fixed issue with latest ctypes, speed gains, other changes
-------------------------------------------------------------------
+----------------------------------------------------------------
 25-Apr-2006
 
 * The latest version of ctypes (0.9.9.6) removed the code generator
@@ -420,7 +420,7 @@ Change Log
 
 
 0.3.3 Added some methods, and fixed some small bugs
-------------------------------------------------------------------
+---------------------------------------------------
 19-Apr-2006
 
 * Added a wait for the control to be active and configurable
@@ -454,7 +454,7 @@ Change Log
 
 
 0.3.2 Fixed setup.py and some typos
-------------------------------------------------------------------
+-----------------------------------
 31-Mar-2006
 
 * Fixed the spelling of Stefaan Himpe's name
@@ -464,7 +464,7 @@ Change Log
 
 
 0.3.1 Performance tune-ups
-------------------------------------------------------------------
+--------------------------
 30-Mar-2006
 
 * Change calculation of distance in findbestmatch.GetNonTextControlName()
@@ -586,7 +586,7 @@ Change Log
 
 
 0.2.5 More refactoring, more tests
-------------------------------------------------
+----------------------------------
 07-Mar-2006
 
 * Added wrapper classes for Menus and MenuItems this enabled cleaner
@@ -626,7 +626,7 @@ Change Log
 
 
 0.2.1 Small Release number - big changes
-------------------------------------------------
+----------------------------------------
 17-Feb-2006
 
 * Quick release to get many changes out there - but this release has
@@ -711,7 +711,7 @@ Change Log
 
 
 0.2.0 Significant refactoring
-------------------------------------------------
+-----------------------------
 06-Feb-2006
 
 * Changed how windows are searched for (from application)
@@ -750,7 +750,7 @@ Change Log
 
 
 0.1.3 Many changes, few visible
-------------------------------------------------
+-------------------------------
 15-Jan-2006
 
 * Wrote doc strings for all modules, classes and functions
@@ -778,7 +778,7 @@ Change Log
 
 
 0.1.2 Add Readme and rollup various changes
-------------------------------------------------
+-------------------------------------------
 15-Jan-2006
 
 * Updated Readme (original readme was incorrect)
@@ -795,11 +795,11 @@ Change Log
 
 
 0.1.1 Minor bug fix release
-------------------------------------------------
+---------------------------
 12-Jan-2006
 
 * Fixed some minor bugs discovered after release
 
 0.1.0 Initial Release
-------------------------------------------------
+---------------------
 6-Jan-2006

@@ -69,5 +69,5 @@ The methods to help you to find a needed control.
 
 
 How To`s
-==================
+========
 * :doc:`HowTo`
